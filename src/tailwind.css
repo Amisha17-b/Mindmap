@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.mindmap {
+    padding: 20px;
+  }
+  
+  .phase-container {
+    margin-bottom: 40px; /* Add spacing between phases */
+  }
+  
+  .phase {
+    position: relative;
+  }
+  
+  .sub-phase {
+    margin-left: 40px; /* Increase margin for sub-phases */
+  }
+  
+  .sub-sub-phase {
+    margin-left: 60px; /* Increase margin for sub-sub-phases */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-out;
+  }
+
+  /* tailwind.css */
+
+
+
+.tooltip {
+    top: -10px;
+    /*Adjusttooltipposition*/
+    right: 100;
+    transform: translateY(-50%);
+    display: none;
+    width: 200px;
+    /*Adjusttooltipwidth*/-webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+  
+  .sub-sub-phase:hover .tooltip {
+    display: block; /* Show tooltip on hover */
+  }
+  
+
+
